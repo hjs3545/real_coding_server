@@ -69,8 +69,8 @@ jobs:
       - name: Execute script
         uses: appleboy/ssh-action@master
         with:
-          username: 34.64.75.212
-          host: hjs3545
+          username: hjs3545
+          host: 34.64.75.212
           key: ${{ secrets.PRIVATE_KEY }}
           script_stop: true
           script: cd /home/hjs3545 && chmod +x deploy.sh && ./deploy.sh
